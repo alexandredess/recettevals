@@ -98,7 +98,7 @@ class IngredientController extends AbstractController
         ]);
     }
 
-    #[Route('/ingredient/suppression/{id}', name:'app_ingredient_delete', methods: ['POST'])]
+    #[Route('/ingredient/suppression/{id}', name:'app_ingredient_delete', methods: ['GET'])]
     public function delete(EntityManagerInterface $manager,int $id,IngredientRepository $ingredientRepository): Response{
 
         $ingredient= $ingredientRepository->findOneBy(['id'=>$id]);

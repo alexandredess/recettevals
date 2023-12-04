@@ -3,7 +3,7 @@
 {% block title %}First Project - Ingrédients{% endblock %}
 
 {% block body %}
-<div class="container mt-4">
+<div class="container mt-4 bgBlack">
   {% if not ingredients.items is same as([]) %}
     <h1>Mes ingrédients</h1>
     <a href="{{path('app_ingredient_new')}}" class="btn btn-primary mt-4">Ajouter un ingrédient</a>
